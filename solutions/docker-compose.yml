@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  csvserver:
+    image: csvserver1:latest
+    ports:
+      - "9393:9300"
+    env_file:
+      - /home/ec2-user/csvserver/csvserver.env
