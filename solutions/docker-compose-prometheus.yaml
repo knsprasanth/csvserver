@@ -1,0 +1,26 @@
+version: '3'
+
+services:
+  csvserver:
+    image: csvserver1:latest
+    ports:
+      - "9393:9300"
+    env_file:
+      - /home/ec2-user/csvserver/csvserver.env
+[ec2-user@ip-172-31-92-52 solution]$ cat docker-compose-prometheus.yaml
+version: '3'
+
+services:
+  csvserver:
+    image: csvserver1:latest
+    ports:
+      - "9393:9300"
+    env_file:
+      - /home/ec2-user/csvserver/csvserver.env
+  prometheus:
+    image: prom/prometheus:v2.22.0
+    ports: 
+      - "9090:9090"
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+    restart: always
