@@ -1,4 +1,4 @@
-[ec2-user@ip-172-31-92-52 ~]$ git clone https://github.com/infracloudio/csvserver.git
+*git clone https://github.com/infracloudio/csvserver.git
 Cloning into 'csvserver'...
 remote: Enumerating objects: 30, done.
 remote: Counting objects: 100% (30/30), done.
@@ -7,7 +7,7 @@ remote: Total 30 (delta 8), reused 30 (delta 8), pack-reused 0
 Receiving objects: 100% (30/30), 7.87 KiB | 7.88 MiB/s, done.
 Resolving deltas: 100% (8/8), done.
 
-sudo docker pull infracloudio/csvserver:latest
+* sudo docker pull infracloudio/csvserver:latest
 latest: Pulling from infracloudio/csvserver
 ae43b40a9945: Pull complete 
 7bb33bb2db38: Pull complete 
@@ -16,7 +16,7 @@ Digest: sha256:20bc5a93fac217270fe5c88d639d82c6ecb18fc908283e046d9a3917a840ec1f
 Status: Downloaded newer image for infracloudio/csvserver:latest
 docker.io/infracloudio/csvserver:latest
 
-sudo docker pull prom/prometheus:v2.22.0
+* sudo docker pull prom/prometheus:v2.22.0
 v2.22.0: Pulling from prom/prometheus
 76df9210b28c: Pull complete 
 559be8e06c14: Pull complete 
